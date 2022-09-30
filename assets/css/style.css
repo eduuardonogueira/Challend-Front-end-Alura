@@ -1,8 +1,7 @@
 /* Classes globais */
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif !important;
 }
-
 
 button {
     width: 133px;
@@ -14,7 +13,6 @@ button {
 
 
 /* Classes globais */
-
 
 /* Menu */
 .menu {
@@ -56,13 +54,14 @@ h1 {
     padding: 16px;
     height: 192px;
     width: 100vw;
-    background: url(../img/banner-image.png) no-repeat;
+    background: green;
+    /* background: url(../img/banner-image.png) no-repeat; */
     background-size: 100%;
+    gap: 8px;
 }
 
 section h2 {
     font-size: 22px;
-    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     color: #FFFFFF;
     line-height: 26px;
@@ -70,17 +69,69 @@ section h2 {
 
 section h3 {
     font-size: 14px;
-    font-family: 'Raleway', sans-serif;
     font-weight: 600;
     line-height: 16px;
+    color: #FFFFFF;
 }
 
 .banner-button {
     background: #2A7AE4;
     color: #FFFFFF;
 }
-
-
-
-
 /* Banner */
+
+
+/* Sections */
+.section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    padding: 16px;
+    gap: 16px;
+}
+
+.section h2 {
+    color:#464646;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    justify-self: flex-end;
+    text-decoration: none;
+    gap: 5px;
+    color:#2A7AE4;
+}
+
+a p {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+a i {
+    font-size: 17px;
+}
+/* Sections */
+
+
+/* Product */
+.product {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.product-name {
+    font-size: 14px;
+    color: #464646;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.product-value {
+    font-size: 16px;
+    color: #464646;
+    font-weight: 700;
+    line-height: 19px;
+}
+/* Product */
