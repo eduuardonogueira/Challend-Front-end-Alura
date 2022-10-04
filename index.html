@@ -17,19 +17,25 @@
         <nav>
             <ul class="menu">
                 <li>
-                    <h1>
-                        <img class="menu-logo" src="./assets/img/Logo.png" alt="Logo da AluraGeek">
-                       </h1>
+                    <div class="left">
+                        <h1>
+                            <img class="menu-logo" src="./assets/img/Logo.png" alt="Logo da AluraGeek">
+                        </h1>
+                        <input class="search" type="text" placeholder="o que deseja encontrar?">
+                        <i class="ph-magnifying-glass search-icon"></i>
+                    </div>
                 </li>
 
                 <li>
                     <a href="">
-                        <button class="menu-button">Login</button>
+                        <button class="menu-button button">Login</button>
                     </a>
                 </li>
 
                 <li>
-                    <i class="ph-magnifying-glass search"></i>
+                    <button class="icon-button">
+                        <i class="ph-magnifying-glass icon"></i>
+                    </button>
                 </li>
             </ul>
         </nav>
@@ -44,7 +50,7 @@
             <h3 class="banner-text">Produtos selecionados com 33% de desconto</h3>
 
             <a href="">
-                <button class="banner-button">Ver Consoles</button>
+                <button class="banner-button button">Ver Consoles</button>
             </a>
         </section>
 
@@ -80,6 +86,17 @@
                 </a>
             </article><article class="product">
                 <img src="./assets/img/products/star-wars-3.png" alt="imagem do produto">
+                
+                <h3 class="product-name">Produto XYZ</h3>
+
+                <p class="product-value">R$ 60,00</p>
+
+                <a href="#">
+                    <p>Ver produto</p>
+                </a>
+            </article>
+            <article class="product">
+                <img src="./assets/img/products/star-wars-4.png" alt="imagem do produto">
                 
                 <h3 class="product-name">Produto XYZ</h3>
 
@@ -154,6 +171,17 @@
                     <p>Ver produto</p>
                 </a>
             </article>
+            <article class="product">
+                <img src="./assets/img/products/console-4.png" alt="imagem do produto">
+                
+                <h3 class="product-name">Controle XYZ</h3>
+
+                <p class="product-value">R$ 60,00</p>
+
+                <a href="#">
+                    <p>Ver produto</p>
+                </a>
+            </article>
         </section>
 
         <!-- Diversos -->
@@ -208,6 +236,17 @@
                     <p>Ver produto</p>
                 </a>
             </article>
+            <article class="product">
+                <img src="./assets/img/products/diversos-4.png" alt="imagem do produto">
+                
+                <h3 class="product-name">Controle e console XYZ</h3>
+
+                <p class="product-value">R$ 60,00</p>
+
+                <a href="#">
+                    <p>Ver produto</p>
+                </a>
+            </article>
         </section>
     </main>
 
@@ -240,11 +279,10 @@
             <input class="form-name" type="text">
             <span>Nome</span>
             <textarea class="form-text" type="text" placeholder="Escreva sua mensagem" cols="30" rows="10"></textarea>
-            <input class="form-button" type="submit" value="Enviar mensagem">
+            <input class="form-button button" type="submit" value="Enviar mensagem">
         </form>
-        
-        <address>Desenvolvido por Eduardo Nogueira 2022</address> 
     </footer>
+    <address>Desenvolvido por Eduardo Nogueira 2022</address> 
 
 </body>
 </html>
