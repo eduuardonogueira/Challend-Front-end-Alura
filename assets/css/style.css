@@ -147,10 +147,10 @@ h1 {
     justify-content: flex-end;
     padding: 16px;
     height: 192px;
-    background: green;
-    /* background: url(../img/banner-image.png) no-repeat; */
+    background: url(../img/banner-image.jpg) no-repeat center;
     background-size: 100%;
     gap: 8px;
+    box-sizing: border-box;
 }
 
 section h2 {
@@ -202,12 +202,14 @@ section h3 {
 
 /* Sections */
 .section {
+    width: 100vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;  
     justify-content: space-between;
     padding: 16px;
     gap: 16px;
+    box-sizing: border-box;
 }
 
 .section h2 {
@@ -232,7 +234,11 @@ a i {
     font-size: 17px;
 }
 
-.section article:nth-child(6) {
+.section article:last-child {
+    display: none;
+}
+
+.section article:nth-child(5) {
     display: none;
 }
 
@@ -254,9 +260,20 @@ a i {
 
 @media screen and (min-width: 1440px) {
     .section {
-        padding: 64px 152px;
+        padding: 64px 152px 0px ;
+    }
+
+    .section:last-child {
+        padding: 64px 152px 64px ;
+    }
+
+    .section article:last-child {
+        display: flex;
     }
     
+    .section article:nth-child(5) {
+        display: flex;
+    }
 }
 /* Sections */
 
@@ -269,7 +286,8 @@ a i {
 }
 
 article img {
-    width: 43.5vw;
+    width: 43.3vw;
+    height: 174px;
 }
 
 .product-name {
@@ -295,12 +313,18 @@ article img {
 @media screen and (min-width: 704px) {
     .product img {
         width: 21vw;
+        height: 20vw;
     }
 }
 
-@media screen and (min-width: 1240px) {
+@media screen and (min-width: 1440px) {
+    .product {
+        width: 176px;
+    }
+
     .product img {
-        width: 100%;
+        width: 176px;
+        height: 174px;
     }
 }
 /* Product */
@@ -375,7 +399,7 @@ footer img {
     line-height: 16px;
     font-weight: 400;
     top: 34px;
-    left: 28px;
+    left: 12px;
 }
 
 .form-text {
@@ -430,6 +454,11 @@ address {
     .footer-menu {
         grid-column: 1;
         align-items: flex-start;
+        gap: 24px
+    }
+
+    .footer-menu li {
+        font-size: 16px;
     }
 
     .footer-form {
@@ -438,6 +467,31 @@ address {
         width: 439px;
         margin-top: 0px;
         align-self: flex-start;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .footer-box {
+        padding: 64px 152px;
+        grid-template-columns: 1fr 1fr auto;
+        grid-row: auto;
+    }
+    .footer-box img {
+        align-self: flex-start;
+    }   
+
+    .footer-menu {
+        grid-column: 2/3;
+    }
+
+    .footer-form {
+        grid-column: 3/4;
+        min-width: 560px ;
+    }
+
+    .form-button {
+        padding: 18px;
+        height: auto;
     }
 }
 
